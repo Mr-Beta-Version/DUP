@@ -1,5 +1,6 @@
 #Programme By Mr. Beta
 import os
+os.system('git pull')
 os.system('clear')
 print('- Duplicate Remover By Mr. Beta -')
 
@@ -18,5 +19,6 @@ def rd():
           if line not in lines_seen:
              outfile.write(line)
              lines_seen.add(line)
+  print('Duplicate Remove Successful')
               
 rd()
