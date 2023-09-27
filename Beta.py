@@ -3,8 +3,19 @@ import os,time,random
 os.system('git pull')
 os.system('clear')
 
-def menu():
+def logo():
   os.system('clear')
+  print("""
+  _____  _    _ _____  
+ |  __ \| |  | |  __ \ 
+ | |  | | |  | | |__) |
+ | |  | | |  | |  ___/ 
+ | |__| | |__| | |     
+ |_____/ \____/|_|
+  """)
+
+def menu():
+  logo()
   print('[1] Remove Duplicate')
   print('[2] Mix A File')
   ch = input('>> ')
@@ -19,7 +30,7 @@ def menu():
 
 
 def mx():
-  os.system('clear')
+  logo()
   print('- File Mixer By Mr. Beta -')
   try:
       file = input('File Path >> ')
@@ -38,7 +49,7 @@ def mx():
 
 
 def rd():
-  os.system('clear')
+  logo()
   print('- Duplicate Remover By Mr. Beta -')
   try:
       file = input('File Path >> ')
