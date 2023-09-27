@@ -54,4 +54,4 @@ def rd():
              lines_seen.add(line)
   print(f'Duplicate Remove Successful > {save}')
               
-rd()
+menu()
