@@ -30,8 +30,9 @@ def mx():
   print('Mixing IDs....')
   idslist = open(file).read().splitlines()
   random.shuffle(idslist)
-  for id in idslist:
-    open(save,'a').write(id+'\n')
+  with open(save,'w') as wf:
+    for id in idslist:
+      wf.write(id+'\n')
   print(f'File Mix Successful > {save}')
               
 
